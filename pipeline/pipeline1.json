@@ -15,8 +15,16 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://dummy.restapiexample.com/api/v1/employees",
-					"method": "GET"
+					"url": "\thttps://dummy.restapiexample.com/api/v1/create",
+					"method": "POST",
+					"headers": {
+						"Content-type": "application\\json"
+					},
+					"body": {
+						"name": "test",
+						"salary": "123",
+						"age": "23"
+					}
 				}
 			}
 		],
