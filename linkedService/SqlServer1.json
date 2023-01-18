@@ -1,0 +1,17 @@
+{
+	"name": "SqlServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=SQL1.contoso.com;initial catalog=DB1",
+			"userName": "contoso\\administrator",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJiYzJiNzQ4My0xMDYwLTQwNmMtOTliZi0wM2NmZTNkNjUzNjYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "shir1public",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
