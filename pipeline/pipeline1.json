@@ -18,7 +18,7 @@
 					"url": "https://sakublob.queue.core.windows.net/saku/messages",
 					"method": "POST",
 					"headers": {
-						"Authorization": "Sharedkey sakublob:QvgS4ULhVQAtSZ3km3JSvksSt289CGv3nC8XC/D+k5IjXhfojdz4M5WduiVyfcXXalN6ZfX6iV/o+AStsTMyFg==",
+						"Authorization": "Sharedkey sakublob:?sv=2021-06-08&ss=q&srt=sco&sp=rwdlacup&se=2023-01-23T19:57:53Z&st=2023-01-23T11:57:53Z&spr=https&sig=OtByRW1tcOrAFO5jY6Zx5MscKiRT%2BOvF2PKTCNe5Lbg%3D",
 						"x-ms-version": "2021-04-10"
 					},
 					"body": "<QueueMessage>  \n    <MessageText>message-content</MessageText>  \n</QueueMessage>\n",
