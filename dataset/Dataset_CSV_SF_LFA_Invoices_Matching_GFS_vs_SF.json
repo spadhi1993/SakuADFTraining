@@ -1,0 +1,156 @@
+{
+	"name": "Dataset_CSV_SF_LFA_Invoices_Matching_GFS_vs_SF",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Linked_service_AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "LFA Services"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "SF_LFA_Invoices_Matching_GFS_vs_SF.csv",
+				"folderPath": "LFA_Services",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SF_WorkplanId",
+				"type": "String"
+			},
+			{
+				"name": "SF_WorkplanName",
+				"type": "String"
+			},
+			{
+				"name": "SF_InvoiceId",
+				"type": "String"
+			},
+			{
+				"name": "SF_ExternalId",
+				"type": "String"
+			},
+			{
+				"name": "SF_PurchaseOrderNumber",
+				"type": "String"
+			},
+			{
+				"name": "SF_InvoiceNumber",
+				"type": "String"
+			},
+			{
+				"name": "SF_InvoiceType",
+				"type": "String"
+			},
+			{
+				"name": "SF_InvoiceStatus",
+				"type": "String"
+			},
+			{
+				"name": "SF_InvoiceAmount",
+				"type": "String"
+			},
+			{
+				"name": "SF_BudgetCentre",
+				"type": "String"
+			},
+			{
+				"name": "SF_Country",
+				"type": "String"
+			},
+			{
+				"name": "SF_NotificationStatus",
+				"type": "String"
+			},
+			{
+				"name": "SF_Supplier",
+				"type": "String"
+			},
+			{
+				"name": "SF_TimeoutDays",
+				"type": "String"
+			},
+			{
+				"name": "GFS_External_ID",
+				"type": "String"
+			},
+			{
+				"name": "GFS_PurchaseOrderNumber",
+				"type": "String"
+			},
+			{
+				"name": "GFS_InvoiceNumber",
+				"type": "String"
+			},
+			{
+				"name": "GFS_PaymentStatus",
+				"type": "String"
+			},
+			{
+				"name": "GFS_InvoiceApprovalStatus",
+				"type": "String"
+			},
+			{
+				"name": "GFS_CurrentLastApprover",
+				"type": "String"
+			},
+			{
+				"name": "GFS_HoldDescription",
+				"type": "String"
+			},
+			{
+				"name": "GFS_InvoiceDescription",
+				"type": "String"
+			},
+			{
+				"name": "GFS_PaymentDueDate",
+				"type": "String"
+			},
+			{
+				"name": "GFS_InvoiceAmount",
+				"type": "String"
+			},
+			{
+				"name": "GFS_InvoiceDate",
+				"type": "String"
+			},
+			{
+				"name": "GFS_InvoiceCreationDate",
+				"type": "String"
+			},
+			{
+				"name": "GFS_PaymentDate",
+				"type": "String"
+			},
+			{
+				"name": "GFS_BudgetCenter",
+				"type": "String"
+			},
+			{
+				"name": "GFS_Country",
+				"type": "String"
+			},
+			{
+				"name": "GFS_NotificationStatus",
+				"type": "String"
+			},
+			{
+				"name": "GFS_Supplier",
+				"type": "String"
+			},
+			{
+				"name": "GFS_TimeoutDays",
+				"type": "String"
+			}
+		]
+	}
+}
