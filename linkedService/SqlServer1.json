@@ -5,9 +5,9 @@
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
-			"connectionString": "integrated security=True;data source=SQL1\\SQLEXPRESS;initial catalog=db1",
+			"connectionString": "integrated security=True;data source=SQL1\\SQLEXPRESS;initial catalog=DB1",
 			"userName": "contoso\\administrator",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIxMmI5NjFmMS0xZTY1LTRiMjctOGI4MC1mMTc4ODUwMjlhYzEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmNzU3ZWYzZS04ZTFmLTQxMmMtYjFhNC1kYmYxNzM3NTU4OTEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "shir1public",
