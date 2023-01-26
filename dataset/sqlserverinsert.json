@@ -1,0 +1,100 @@
+{
+	"name": "sqlserverinsert",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "GFS_External_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GFS_PurchaseOrderNumber",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GFS_InvoiceNumber",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GFS_InvoiceApprovalStatus",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GFS_CurrentLastApprover",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GFS_HoldDescription",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GFS_InvoiceDescription",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GFS_InvoiceAmount",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 2
+			},
+			{
+				"name": "GFS_InvoiceDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "GFS_InvoiceCreationDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "GFS_PaymentDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "GFS_PaymentStatus",
+				"type": "varchar"
+			},
+			{
+				"name": "GFS_PaymentDueDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "GFS_BudgetCenter",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GFS_Country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GFS_NotificationStatus",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GFS_Supplier",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GFS_TimeoutDays",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "View_SF_LFA_Invoices"
+		}
+	}
+}
