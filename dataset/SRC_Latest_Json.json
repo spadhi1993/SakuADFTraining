@@ -1,0 +1,76 @@
+{
+	"name": "SRC_Latest_Json",
+	"properties": {
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Positive_2023_02_09_T044856.json",
+				"folderPath": "PLAYGROUND/Bronze/ALLFACTS_TESTING/Test/Positive",
+				"fileSystem": "whdh"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"@odata.context": {
+					"type": "string"
+				},
+				"value": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"TESTDATA": {
+								"type": "string"
+							},
+							"TESTRESULT": {
+								"type": "string"
+							},
+							"_RecordID": {
+								"type": "string"
+							},
+							"Sys_PK": {
+								"type": "integer"
+							},
+							"Sys_RowTitle": {
+								"type": "string"
+							},
+							"Sys_Version": {
+								"type": "integer"
+							},
+							"Sys_VersionID": {
+								"type": "string"
+							},
+							"Sys_OriginCode": {
+								"type": "string"
+							},
+							"Sys_LoadBy": {
+								"type": "string"
+							},
+							"Sys_CommitDateUtc": {
+								"type": "string"
+							},
+							"Sys_FirstLoadBy": {
+								"type": "string"
+							},
+							"Sys_FirstCommitDateUtc": {
+								"type": "string"
+							},
+							"Sys_ID": {
+								"type": "string"
+							},
+							"Sys_BatchID": {
+								"type": "integer"
+							},
+							"Sys_FirstBatchID": {
+								"type": "integer"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
