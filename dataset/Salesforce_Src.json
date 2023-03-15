@@ -1,0 +1,27 @@
+{
+	"name": "Salesforce_Src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Salesforce_Comex",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Object": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Saravana"
+		},
+		"annotations": [],
+		"type": "SalesforceObject",
+		"schema": [],
+		"typeProperties": {
+			"objectApiName": {
+				"value": "@dataset().Object",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

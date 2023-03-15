@@ -1,0 +1,24 @@
+{
+	"name": "ComEx_Sql_DB",
+	"properties": {
+		"parameters": {
+			"table_nm": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Saravana"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().table_nm",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
