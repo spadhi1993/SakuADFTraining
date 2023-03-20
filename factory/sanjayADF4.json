@@ -1,0 +1,9 @@
+{
+	"name": "sanjayADF4",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "true"
+		}
+	},
+	"location": "eastus"
+}
