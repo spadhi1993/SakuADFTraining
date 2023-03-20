@@ -7,6 +7,33 @@
 		},
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
+		},
+		"Linked_service_AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"Salesforce_Comex_password": {
+			"value": ""
+		},
+		"Salesforce_Comex_securityToken": {
+			"value": ""
+		},
+		"SqlServer1_connectionString": {
+			"value": "Integrated Security=True;Data Source=SQL1\\SQLEXPRESS;Initial Catalog=DB1"
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"Linked_service_AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://sanjayadlsgen2.dfs.core.windows.net/"
+		},
+		"Salesforce_Comex_properties_typeProperties_environmentUrl": {
+			"value": "https://knauf--uat.sandbox.my.salesforce.com"
+		},
+		"Salesforce_Comex_properties_typeProperties_username": {
+			"value": "Michael.eaton@knauf.com.uat"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "contoso\\administrator"
 		}
 	}
 }

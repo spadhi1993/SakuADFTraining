@@ -11,6 +11,43 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
+		"Linked_service_AzureDataLakeStorage_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'Linked_service_AzureDataLakeStorage'"
+		},
+		"Salesforce_Comex_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'Salesforce_Comex'"
+		},
+		"Salesforce_Comex_securityToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'securityToken' of 'Salesforce_Comex'"
+		},
+		"SqlServer1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'SqlServer1'",
+			"defaultValue": "Integrated Security=True;Data Source=SQL1\\SQLEXPRESS;Initial Catalog=DB1"
+		},
+		"SqlServer1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'SqlServer1'"
+		},
+		"Linked_service_AzureDataLakeStorage_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sanjayadlsgen2.dfs.core.windows.net/"
+		},
+		"Salesforce_Comex_properties_typeProperties_environmentUrl": {
+			"type": "string",
+			"defaultValue": "https://knauf--uat.sandbox.my.salesforce.com"
+		},
+		"Salesforce_Comex_properties_typeProperties_username": {
+			"type": "string",
+			"defaultValue": "Michael.eaton@knauf.com.uat"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "contoso\\administrator"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -40,6 +77,33 @@
 					},
 					"AzureBlobStorage1_connectionString": {
 						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
+					"Linked_service_AzureDataLakeStorage_accountKey": {
+						"value": "[parameters('Linked_service_AzureDataLakeStorage_accountKey')]"
+					},
+					"Salesforce_Comex_password": {
+						"value": "[parameters('Salesforce_Comex_password')]"
+					},
+					"Salesforce_Comex_securityToken": {
+						"value": "[parameters('Salesforce_Comex_securityToken')]"
+					},
+					"SqlServer1_connectionString": {
+						"value": "[parameters('SqlServer1_connectionString')]"
+					},
+					"SqlServer1_password": {
+						"value": "[parameters('SqlServer1_password')]"
+					},
+					"Linked_service_AzureDataLakeStorage_properties_typeProperties_url": {
+						"value": "[parameters('Linked_service_AzureDataLakeStorage_properties_typeProperties_url')]"
+					},
+					"Salesforce_Comex_properties_typeProperties_environmentUrl": {
+						"value": "[parameters('Salesforce_Comex_properties_typeProperties_environmentUrl')]"
+					},
+					"Salesforce_Comex_properties_typeProperties_username": {
+						"value": "[parameters('Salesforce_Comex_properties_typeProperties_username')]"
+					},
+					"SqlServer1_properties_typeProperties_userName": {
+						"value": "[parameters('SqlServer1_properties_typeProperties_userName')]"
 					}
 				}
 			},
