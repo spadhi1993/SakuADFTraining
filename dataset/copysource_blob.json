@@ -1,0 +1,19 @@
+{
+	"name": "copysource_blob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "emp.txt",
+				"folderPath": "copy",
+				"container": "adfdata"
+			}
+		}
+	}
+}
