@@ -1,0 +1,18 @@
+{
+	"name": "Sink_Blob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "emp2.txt",
+				"container": "adfdata"
+			}
+		}
+	}
+}
