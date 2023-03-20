@@ -29,7 +29,7 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
+							"type": "AzureBlobStorageWriteSettings"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
@@ -55,7 +55,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "copy_ADLS_CSV",
+						"referenceName": "Sink_BLOB_CSV",
 						"type": "DatasetReference"
 					}
 				]
