@@ -2,7 +2,7 @@
 	"name": "sanjayADF4",
 	"properties": {
 		"globalConfigurations": {
-			"PipelineBillingEnabled": "false"
+			"PipelineBillingEnabled": "true"
 		}
 	},
 	"location": "eastus"
