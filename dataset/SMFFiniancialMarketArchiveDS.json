@@ -1,0 +1,26 @@
+{
+	"name": "SMFFiniancialMarketArchiveDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SMFInputStorage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "SMFDataSets"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat(replace('test.xlsx','.xlsx',''), '_', formatDateTime(utcnow(),'yy-MM-ddTHH-mm-ss'), '.xlsx')",
+					"type": "Expression"
+				},
+				"folderPath": "Financial_Market/Archive",
+				"container": "ceic"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
