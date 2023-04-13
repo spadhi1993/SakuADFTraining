@@ -1,0 +1,35 @@
+{
+	"name": "Excel1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "test.xlsx",
+				"folderPath": "Financial_Market/Archive",
+				"container": "ceic"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "name ",
+				"type": "String"
+			},
+			{
+				"name": "place",
+				"type": "String"
+			},
+			{
+				"name": "age",
+				"type": "String"
+			}
+		]
+	}
+}
