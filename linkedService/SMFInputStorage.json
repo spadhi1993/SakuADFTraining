@@ -1,0 +1,12 @@
+{
+	"name": "SMFInputStorage",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://sakublob.blob.core.windows.net/",
+			"accountKind": "StorageV2"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
+}
