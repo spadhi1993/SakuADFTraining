@@ -26,22 +26,20 @@
 						}
 					},
 					"sink": {
-						"type": "BinarySink",
-						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
-						}
+						"type": "CosmosDbSqlApiSink",
+						"writeBehavior": "insert"
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "copysource_blob",
+						"referenceName": "SMFFiniancialMarketArchiveDS",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Sink_Blob",
+						"referenceName": "CosmosDBDataSet",
 						"type": "DatasetReference"
 					}
 				]
