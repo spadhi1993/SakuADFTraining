@@ -1,0 +1,43 @@
+{
+	"name": "SMFFiniancialMarketRUDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SMFInputStorage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "SMFDataSets"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "RU",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "3_Finiancial_Market.xlsx",
+				"folderPath": "Financial_Market",
+				"container": "ceic"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Select this link and click Refresh/Edit Download to update data and add or remove series",
+				"type": "String"
+			},
+			{
+				"name": "RUB Denominated Indices: MOEX Russia Index",
+				"type": "String"
+			},
+			{
+				"name": "RUB Denominated Indices: MICEX 10 Index",
+				"type": "String"
+			},
+			{
+				"name": "(DC)RUB Denominated Indices: RTS Siberia Index",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

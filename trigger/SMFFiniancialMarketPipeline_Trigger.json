@@ -1,0 +1,18 @@
+{
+	"name": "SMFFiniancialMarketPipeline_Trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/ceic/blobs/Financial_Market/",
+			"blobPathEndsWith": "3_Finiancial_Market.xlsx",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/c7f707f9-cb8b-4e9a-90ec-a682fa712dcb/resourceGroups/RG-SQA-DATAMANAGEMENT/providers/Microsoft.Storage/storageAccounts/sqadataplatformsto",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

@@ -1,0 +1,875 @@
+{
+	"name": "SMFFiniancialMarketUKDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SMFInputStorage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "SMFDataSets"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "UK",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "3_Finiancial_Market.xlsx",
+				"folderPath": "Financial_Market",
+				"container": "ceic"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Select this link and click Refresh/Edit Download to update data and add or remove series",
+				"type": "String"
+			},
+			{
+				"name": "Index: FT 30",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 100 ",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 250 ",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 250 ex Investment Companies",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM 100",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM UK 50 ",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE TechMark 100 ",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE TechMark All-Share",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Non Financials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small ex Investment Trust",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 601010 Oil, Gas & Coal",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 552010 Chemicals",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 551020 Industrial Metals & Mining",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 551030 Precious Metals & Mining",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 501010 Construction & Materials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 502010 Aerospace & Defense",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 502030 General Industrials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 502020 Electronic & Electrical Equipment",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 502040 Industrial Engineering",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 502060 Industrial Transportation",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 502050 Industrial Support Services",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE All-Small 3350 Automobiles & Parts",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 451020 Food Producers",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 402020 Household Goods & Home Construction",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 402030 Leisure Goods",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 402040 Personal Goods",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 201010 Health Care Providers",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE All-Small 4570 Pharmaceuticals & Biotechnology",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 452010 Personal Care, Drug & Grocery Stores",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 402010 Consumer Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 403010 Media",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 405010 Travel & Leisure",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 651010 Electricity",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE All-Small 7570 Gas, Water & Multiutilities",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE All-Small 8530 Nonlife Insurance",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 303010 Life Insurance",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 302010 Finance & Credit Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 302040 Closed End Investments",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 101010 Software & Computer Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Small 101020 Technology Hardware & Equipment",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All Share",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All Share (ExIT)",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 60 Energy",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 601010 Oil, Gas & Coal",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE All-Share 0570 Oil Equipment & Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 55 Basic Materials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 552010 Chemicals",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 551010 Industrial Materials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 551020 Industrial Metals & Mining",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 551030 Precious Metals & Mining",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 50 Industrials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 501010 Construction & Materials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 502010 Aerospace & Defense",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 502030 General Industrials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 502020 Electronic & Electrical Equipment",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 502040 Industrial Engineering",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 502060 Industrial Transportation",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 502050 Industrial Support Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 45 Consumer Staples",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 401010 Automobiles & Parts",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 451010 Beverages",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 451020 Food Producers",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 402020 Household Goods & Home Construction",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 402030 Leisure Goods",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 402040 Personal Goods",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 451030 Tobacco",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 20 Health Care",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 201010 Health Care Providers",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 201030 Pharmaceuticals & Biotechnology",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 40 Consumer Discretionary",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 452010 Personal Care, Drug & Grocery Stores",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 402010 Consumer Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 403010 Media",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 405010 Travel & Leisure",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 15 Telecommunications",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE All-Share 6530 Fixed Line Telecommunications",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 151020 Telecommunications Service Providers",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 65 Utilities",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 651010 Electricity",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 651020 Gas, Water & Multiutilities",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 30 Financials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 301010 Banks",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 303020 Nonlife Insurance",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 303010 Life Insurance",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 302010 Finance & Credit Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 302040 Closed End Investments",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 10 Technology",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 101010 Software & Computer Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE All-Share 101020 Technology Hardware & Equipment",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM ",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 6010 Energy",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 5520 Chemicals",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 5510 Basic Resources",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 5010 Construction & Materials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 5020 Industrial Goods & Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 4010 Automobiles & Parts",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 4510 Food, Beverage & Tobacco",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 4020 Consumer Products & Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 2010 Health Care",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 4040 Retail",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 4030 Media",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 4050 Travel & Leisure",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 1510 Telecommunications",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 6510 Utilities",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 3010 Banks",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 3030 Insurance",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 3020 Financial Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE AIM All-Share 1010 Technology",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 ",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 ex Investment Trust",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 Higher Yield",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Actuaries 350 Low Yield ",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 6010 Energy",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 5520 Chemicals",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 5510 Basic Resources",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 5010 Construction & Materials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 5020 Industrial Goods & Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 4010 Automobiles & Parts",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 4510 Food, Beverage & Tobacco",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 4020 Consumer Products & Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 2010 Health Care",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 4040 Retail",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 4030 Media",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 4050 Travel & Leisure",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 1510 Telecommunications",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 6510 Utilities",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 3010 Banks",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 3030 Insurance",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 3020 Financial Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 1010 Technology",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 601010 Oil, Gas & Coal",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE 350 0570 Oil Equipment & Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 552010 Chemicals",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE 350 1730 Forestry & Paper",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 551020 Industrial Metals & Mining",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 551030 Precious Metals & Mining",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 501010 Construction & Materials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 502010 Aerospace & Defense",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 502030 General Industrials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 502020 Electronic & Electrical Equipment",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 502040 Industrial Engineering",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 502060 Industrial Transportation",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 502050 Industrial Support Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 401010 Automobiles & Parts",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 451010 Beverages",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 451020 Food Producers",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 402020 Household Goods & Home Construction",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 402040 Personal Goods",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 451030 Tobacco",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 201010 Health Care Providers",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 201030 Pharmaceuticals & Biotechnology",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 452010 Personal Care, Drug & Grocery Stores",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 402010 Consumer Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 403010 Media",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 405010 Travel & Leisure",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE 350 6530 Fixed Line Telecommunications",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 151020 Telecommunications Service Providers",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 651010 Electricity",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 651020 Gas, Water & Multi-utilities",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 301010 Banks",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 303020 Nonlife Insurance",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 303010 Life Insurance",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 302010 Finance & Credit Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 302040 Closed End Investments",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE 350 101010 Software & Computer Services",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE 350 9570 Technology Hardware & Equipment",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling ",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling ex Investment Trust",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE Fledgling 1350 Chemicals",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 551030 Precious Metals & Mining",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 501010 Construction & Materials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 502030 General Industrials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 502020 Electronic & Electrical Equipment",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE Fledgling 502040 Industrial Engineering",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 502050 Industrial Support Services",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE Fledgling 3760 Personal Goods",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE Fledgling 4530 Health Care Equipment & Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 404010 Retailers",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 403010 Media",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 651010 Electricity",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE Fledgling 7570 Gas, Water & Multiutilities",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 302020 Banking & Brokerage Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 302040 Closed End Investments",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 101010 Software & Computer Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE Fledgling 101020 Technology Hardware & Equipment",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap ex Investment Trust",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 601010 Oil, Gas & Coal",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 552010 Chemicals",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE SmallCap 1770 Mining",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 501010 Construction & Materials",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 502010 Aerospace & Defense",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 502020 Electronic & Electrical Equipment",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 502040 Industrial Engineering",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 502060 Industrial Transportation",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 502050 Industrial Support Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 451020 Food Producers",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 402020 Household Goods & Home Construction",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 402030 Leisure Goods",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 201010 Health Care Providers",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE SmallCap 4570 Pharmaceuticals & Biotechnology",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 402010 Consumer Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 403010 Media",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 405010 Travel & Leisure",
+				"type": "String"
+			},
+			{
+				"name": "(DC)Index: FTSE SmallCap 8530 Nonlife Insurance",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 303010 Life Insurance",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 302010 Finance & Credit Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 302040 Closed End Investments",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 101010 Software & Computer Services",
+				"type": "String"
+			},
+			{
+				"name": "Index: FTSE SmallCap 101020 Technology Hardware & Equipment",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

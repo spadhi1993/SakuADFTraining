@@ -1,0 +1,154 @@
+{
+	"name": "SMFFiniancialMarketBasePipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "SMFFiniancialMarketToCosmosDB",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [
+					{
+						"activity": "SMFFiniancialMarketDSValidation",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "SMFFiniancialMarketDF",
+						"type": "DataFlowReference",
+						"parameters": {
+							"DaysDifference": {
+								"value": "@pipeline().globalParameters.CosmosDBLoadDaysDifference",
+								"type": "Expression"
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			},
+			{
+				"name": "SMFFiniancialMarketInputFileArchiveCD",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "SMFFiniancialMarketToCosmosDB",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "BinarySource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings"
+						}
+					},
+					"sink": {
+						"type": "BinarySink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "SMFFiniancialMarketBinaryDS",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SMFFiniancialMarketArchiveDS",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "SMFFiniancialMarketInputFileDelete",
+				"type": "Delete",
+				"dependsOn": [
+					{
+						"activity": "SMFFiniancialMarketInputFileArchiveCD",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "SMFFiniancialMarketBinaryDS",
+						"type": "DatasetReference"
+					},
+					"logStorageSettings": {
+						"linkedServiceName": {
+							"referenceName": "SMFInputStorage",
+							"type": "LinkedServiceReference"
+						},
+						"path": "smf-input-logs"
+					},
+					"enableLogging": true,
+					"storeSettings": {
+						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					}
+				}
+			},
+			{
+				"name": "SMFFiniancialMarketDSValidation",
+				"type": "Validation",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "SMFFiniancialMarketBinaryDS",
+						"type": "DatasetReference"
+					},
+					"timeout": "0.00:01:00",
+					"sleep": 10
+				}
+			}
+		],
+		"folder": {
+			"name": "SMF/LoadingIntoCosmosDB/BasePipelines"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-10-08T07:34:05Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

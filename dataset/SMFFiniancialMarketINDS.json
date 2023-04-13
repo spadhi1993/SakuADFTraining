@@ -1,0 +1,91 @@
+{
+	"name": "SMFFiniancialMarketINDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SMFInputStorage",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "SMFDataSets"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "IN",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "3_Finiancial_Market.xlsx",
+				"folderPath": "Financial_Market",
+				"container": "ceic"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Select this link and click Refresh/Edit Download to update data and add or remove series",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: 100",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: SENSEX",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: 200",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: Dollex-200",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: 500",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: Information Technology",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: Capital Goods",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: Fast Moving Consumer Goods",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: Consumer Durables",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: Health Care",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: BANKEX",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: Auto",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: Metal",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: Oil & Gas",
+				"type": "String"
+			},
+			{
+				"name": "Bombay Stock Exchange: Index: 100: 1983-84=100",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
