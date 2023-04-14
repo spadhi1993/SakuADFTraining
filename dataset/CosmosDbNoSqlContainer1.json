@@ -1,10 +1,6 @@
 {
 	"name": "CosmosDbNoSqlContainer1",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "SMFVPFInputCosmosDBLS",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "CosmosDbSqlApiCollection",
 		"schema": {},
